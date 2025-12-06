@@ -8,14 +8,14 @@ const services = [
     title: "نقل أثاث منزلي",
     description: "خدمة نقل شاملة للمنازل والشقق مع فك وتركيب الأثاث بكل احترافية وعناية فائقة بممتلكاتك.",
     features: ["فك وتركيب كامل", "تغليف احترافي", "ضمان السلامة"],
-    color: "from-primary to-navy-light",
+    color: "from-primary to-primary/70",
   },
   {
     icon: Building2,
     title: "نقل مكاتب وشركات",
     description: "حلول متكاملة لنقل المكاتب والشركات مع تقليل فترة التوقف وضمان استمرارية العمل.",
     features: ["تنسيق مسبق", "نقل سريع", "تركيب فوري"],
-    color: "from-secondary to-gold-light",
+    color: "from-secondary to-secondary/70",
   },
   {
     icon: Package,
@@ -50,7 +50,7 @@ const itemVariants = {
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 bg-background relative overflow-hidden">
+    <section id="services" className="py-16 md:py-24 bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl" />
@@ -64,16 +64,16 @@ export const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 md:mb-16"
         >
           <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
             خدماتنا المتميزة
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
             حلول <span className="text-gradient-gold">نقل شاملة</span> تناسب احتياجاتك
           </h2>
-          <p className="text-lg text-muted-foreground">
-            نقدم مجموعة متكاملة من خدمات النقل والتغليف والتخزين لضمان تجربة نقل سلسة ومريحة
+          <p className="text-base md:text-lg text-muted-foreground px-4">
+            نقدم مجموعة متكاملة من خدمات النقل والتغليف والتخزين لضمان تجربة نقل سلسة ومريحة في جميع مدن المملكة
           </p>
         </motion.div>
 
@@ -83,44 +83,44 @@ export const ServicesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-6"
+          className="grid sm:grid-cols-2 gap-4 md:gap-6"
         >
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               variants={itemVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="group relative bg-card rounded-3xl p-8 border border-border/50 hover:border-accent/50 transition-all duration-500 hover:shadow-lg overflow-hidden"
+              className="group relative bg-card rounded-2xl md:rounded-3xl p-5 md:p-8 border border-border/50 hover:border-accent/50 transition-all duration-500 hover:shadow-lg overflow-hidden"
             >
               {/* Gradient Background on Hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
               
               <div className="relative z-10">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="w-8 h-8 text-primary-foreground" />
+                <div className={`w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 md:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                <h3 className="text-lg md:text-2xl font-bold text-foreground mb-2 md:mb-3 group-hover:text-accent transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-6">
                   {service.features.map((feature) => (
                     <span
                       key={feature}
-                      className="px-3 py-1 bg-muted rounded-lg text-sm text-muted-foreground"
+                      className="px-2 md:px-3 py-0.5 md:py-1 bg-muted rounded-lg text-xs md:text-sm text-muted-foreground"
                     >
                       {feature}
                     </span>
                   ))}
                 </div>
 
-                <Button variant="ghost" className="group/btn text-accent hover:text-accent p-0">
+                <Button variant="ghost" className="group/btn text-accent hover:text-accent p-0 h-auto text-sm md:text-base">
                   اطلب الخدمة
-                  <ArrowLeft className="w-4 h-4 mr-2 group-hover/btn:-translate-x-1 transition-transform" />
+                  <ArrowLeft className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2 group-hover/btn:-translate-x-1 transition-transform" />
                 </Button>
               </div>
             </motion.div>
