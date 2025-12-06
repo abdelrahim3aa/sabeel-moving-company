@@ -9,7 +9,7 @@
 @import '@fontsource/cairo/800.css';
 @import '@fontsource/cairo/900.css';
 
-/* Premium Furniture Moving Service Design System - Riyadh */
+/* Premium Furniture Moving Service Design System - Saudi Arabia */
 
 @layer base {
   :root {
@@ -47,6 +47,9 @@
     --ring: 40 70% 50%;
 
     --radius: 0.75rem;
+
+    /* WhatsApp Green */
+    --whatsapp: 142 70% 45%;
 
     /* Premium Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(40 85% 55%) 0%, hsl(35 90% 45%) 100%);
@@ -126,10 +129,21 @@
   html {
     direction: rtl;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     @apply bg-background text-foreground font-cairo antialiased;
+  }
+
+  /* Hide scrollbar for category filter */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -160,6 +174,10 @@
 
   .shadow-navy {
     box-shadow: var(--shadow-navy);
+  }
+
+  .bg-whatsapp {
+    background-color: hsl(var(--whatsapp));
   }
 
   .animate-float {
@@ -205,5 +223,24 @@
   }
   50% {
     box-shadow: 0 0 0 20px hsl(40 85% 55% / 0);
+  }
+}
+
+/* Mobile-first responsive typography */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
   }
 }
