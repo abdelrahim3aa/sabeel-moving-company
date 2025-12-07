@@ -86,11 +86,11 @@ export const Navbar = () => {
           <nav className="flex items-center justify-between h-16 md:h-20">
             
             {/* Logo */}
-            <motion.a
-              href="#home"
+            <Link
+              to="/"
               className="flex items-center gap-2 md:gap-3 group"
-              whileHover={{ scale: 1.02 }}
             >
+              <motion.div whileHover={{ scale: 1.02 }}>
               <div className={`relative w-11 h-11 md:w-14 md:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 ${
                 isScrolled 
                   ? "bg-gradient-gold shadow-gold" 
@@ -117,7 +117,8 @@ export const Navbar = () => {
                   نقل أثاث في كل السعودية
                 </span>
               </div>
-            </motion.a>
+              </motion.div>
+            </Link>
 
             {/* Desktop Navigation */}
             <motion.div 
