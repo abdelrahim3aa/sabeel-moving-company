@@ -1,8 +1,13 @@
+# Sabeel Moving Company - سبيل لنقل الأثاث
+# https://sabeel-move.lovable.app
+
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -10,7 +15,17 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
 User-agent: *
 Allow: /
 
-Sitemap: https://sabeel-move.vercel.app/sitemap.xml
+# Sitemap location
+Sitemap: https://sabeel-move.lovable.app/sitemap.xml
+
+# Host
+Host: https://sabeel-move.lovable.app

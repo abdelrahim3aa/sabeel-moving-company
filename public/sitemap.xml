@@ -1,73 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home Page -->
+  <!-- الصفحة الرئيسية -->
   <url>
-    <loc>https://sabeel-move.vercel.app/</loc>
+    <loc>https://sabeel-move.lovable.app/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Services Pages -->
+  <!-- صفحات الخدمات -->
   <url>
-    <loc>https://sabeel-move.vercel.app/services/home-moving</loc>
+    <loc>https://sabeel-move.lovable.app/services/home-moving</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/services/office-moving</loc>
+    <loc>https://sabeel-move.lovable.app/services/office-moving</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/services/packing</loc>
+    <loc>https://sabeel-move.lovable.app/services/packing</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/services/storage</loc>
+    <loc>https://sabeel-move.lovable.app/services/storage</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
-  <!-- City Pages -->
+  <!-- صفحات المدن الرئيسية -->
   <url>
-    <loc>https://sabeel-move.vercel.app/city/riyadh</loc>
+    <loc>https://sabeel-move.lovable.app/city/riyadh</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/city/jeddah</loc>
+    <loc>https://sabeel-move.lovable.app/city/jeddah</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/city/makkah</loc>
+    <loc>https://sabeel-move.lovable.app/city/makkah</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/city/madinah</loc>
+    <loc>https://sabeel-move.lovable.app/city/madinah</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/city/dammam</loc>
+    <loc>https://sabeel-move.lovable.app/city/dammam</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://sabeel-move.vercel.app/city/khobar</loc>
-    <priority>0.8</priority>
+    <loc>https://sabeel-move.lovable.app/city/khobar</loc>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/taif</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/tabuk</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/abha</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/qassim</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/hail</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/jazan</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/najran</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/albaha</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/jubail</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/yanbu</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/khamis-mushait</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sabeel-move.lovable.app/city/hofuf</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
